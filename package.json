@@ -1,0 +1,25 @@
+{
+  "name": "utube",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --asar"
+  },
+  "author": "SBJang",
+  "license": "GPL",
+  "devDependencies": {
+    "electron": "^8.2.1",
+    "electron-packager": "^14.2.1"
+  },
+  "build": {
+    "asar": true,
+    "productName": "Utube Player",
+    "appId": "",
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
